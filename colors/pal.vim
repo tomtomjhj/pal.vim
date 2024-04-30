@@ -50,7 +50,7 @@ if has('nvim-0.8')
   hi! link @markup.link Underlined
   hi! link @markup.raw String
   hi! link @markup.raw.block NONE
-  hi! link @markup.list Stat
+  hi! link @markup.list Statement
   hi! link @tag Statement
   hi! link @tag.attribute NONE
 endif

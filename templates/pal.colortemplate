@@ -128,7 +128,7 @@ StatusLineTermNC     -> StatusLineNC
   ; @markup.link.url
   @markup.raw        -> String
   @markup.raw.block  -> NONE
-  @markup.list       -> Stat
+  @markup.list       -> Statement
   ; @markup.list.checked
   ; @markup.list.unchecked
 
