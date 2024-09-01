@@ -174,9 +174,6 @@ texTitleArg          -> Title
 Background: dark
 
 ; Not using the named colors, because the actual meaning depends on t_Co (e.g. darkgrey is 242 t_Co=256).
-Color: term0         none              ~
-Color: term7         none              ~
-Color: term15        none              ~
 ; Error DiffDelete diffRemoved SpellBad
 ; ~~Constant~~
 Color: term1         #d7005f           1                 1  ; darkred
@@ -199,8 +196,11 @@ Color: term6         #00cccc           6                 6  ; darkcyan
 ; Can't assume about relation between 1,7,15 and bg/fg,
 ; but it's clear that 8 will have some contrast with all of them.
 ; >16: Visual NonText
-Color: term8         #808080           8                 8  ; darkgrey
+Color: term8         #777777           8                 8  ; darkgrey
 ; not used
+Color: term0         #080808           0                 0
+Color: term7         #d0d0d0           7                 7
+Color: term15        #eeeeee           15                15
 Color: term9         #ff2266           9                 9  ; red
 Color: term10        #55ff00           10                10 ; green
 Color: term11        #ffaf00           11                11 ; yellow
@@ -214,16 +214,17 @@ Include: pal-common
 ; Background: light {{{
 Background: light
 
-Color: term0         none              ~
-Color: term7         none              ~
-Color: term15        none              ~
 Color: term1         #af0011           1                 1
 Color: term2         #177700           2                 2
 Color: term3         #af7700           3                 3
 Color: term4         #005faf           4                 4
 Color: term5         #871087           5                 5
 Color: term6         #009999           6                 6
-Color: term8         #808080           8                 8
+Color: term8         #999999           8                 8
+
+Color: term0         #eeeeee           0                 0
+Color: term7         #3a3a3a           7                 7
+Color: term15        #121212           15                15
 Color: term9         #d70011           9                 9
 Color: term10        #30af00           10                10
 Color: term11        #d79700           11                11

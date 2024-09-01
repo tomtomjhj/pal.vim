@@ -3,7 +3,7 @@
 ; I don't need 256, but colortemplate requires it anyway.
 Variant: 8 16 256 gui
 Normal               none              none
-NormalFloat          none              none              reverse
+NormalFloat          none              none
 
 ; :help group-name
 Variant: 16 256 gui
@@ -48,14 +48,14 @@ ErrorMsg             none              none              reverse,bold
 Variant: 16 256 gui
 FoldColumn           term8             none              reverse
 Variant: 8
-FoldColumn           none              none              reverse
+FoldColumn           none              none
 Variant: 8 16 256 gui
 Folded               none              none
 IncSearch            term3             none              reverse,bold,underline
 Variant: 16 256 gui
 LineNr               term8             none
 Variant: 8
-LineNr               none              none
+LineNr               term3             none
 Variant: 8 16 256 gui
 MatchParen           none              none              bold,underline
 ModeMsg              none              none              bold
@@ -65,19 +65,39 @@ NonText              term8             none              nocombine
 Variant: 8
 NonText              term3             none              nocombine
 Variant: 8 16 256 gui
-; NOTE: nvim-cmp's PmenuSel is combined with Pmenu, because its menu uses winhighlight
+Variant: 16 256 gui
+; ; This doesn't work well with cmp, which implements PmenuSel with winhighlight for CursorLine.
+; ; - combining reverse with reverse doens't un-reverse
+; ; - nocombine doesn't prevent combining of cursorline, because cursorline is the base highlight, and the original line highlight is combined on top of it.
+; ; - can't directly pass "bg", "fg" when Normal is empty.
+; Pmenu                term8             none              reverse
+; PmenuExtra           term8             none              reverse
+; PmenuKind            term8             none              reverse,bold
+; PmenuMatch           term8             none              reverse,bold
+; PmenuSbar            term8             none              reverse
+; PmenuSel             none              none              reverse,bold,underline
+; PmenuExtraSel        none              none              reverse,bold,underline
+; PmenuKindSel         none              none              reverse,bold,underline
+; PmenuMatchSel        none              none              reverse,bold,underline
+Pmenu                none              term8
+PmenuExtra           none              term8
+PmenuKind            none              term8             bold
+PmenuMatch           none              term8             bold
+PmenuSbar            none              term8
+PmenuSel             none              none              reverse,bold,underline
+PmenuExtraSel        none              none              reverse,bold,underline
+PmenuKindSel         none              none              reverse,bold underline
+PmenuMatchSel        none              none              reverse,bold underline
+Variant: 8
 Pmenu                none              none              reverse
 PmenuExtra           none              none              reverse
 PmenuKind            none              none              reverse,bold
+PmenuMatch           none              none              reverse,bold
 PmenuSbar            none              none              reverse
-Variant: 16 256 gui
-PmenuSel             term8             none              reverse,bold,underline
-PmenuExtraSel        term8             none              reverse,bold
-PmenuKindSel         term8             none              reverse,bold
-Variant: 8
-PmenuSel             none              none              bold,underline
-PmenuExtraSel        none              none              bold
-PmenuKindSel         none              none              bold
+PmenuSel             none              none              reverse,bold,underline
+PmenuExtraSel        none              none              reverse,bold,underline
+PmenuKindSel         none              none              reverse,bold,underline
+PmenuMatchSel        none              none              reverse,bold,underline
 Variant: 8 16 256 gui
 PmenuThumb           none              none
 Question             none              none              bold
