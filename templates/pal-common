@@ -1,9 +1,13 @@
 ; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2 vsts=21,18,18,2
 
+Variant: gui
+Normal               fg0               bg0
+NormalFloat          none              bg2
 ; I don't need 256, but colortemplate requires it anyway.
-Variant: 8 16 256 gui
+Variant: 8 16 256
 Normal               none              none
 NormalFloat          none              none
+Variant: 8 16 256 gui
 
 ; :help group-name
 Variant: 16 256 gui

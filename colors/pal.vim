@@ -93,8 +93,8 @@ if &background ==# 'dark'
     let g:terminal_color_14 = '#38e1e2'
     let g:terminal_color_15 = '#eeeeee'
   endif
-  hi Normal guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi NormalFloat guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Normal guifg=#eeeeee guibg=#080808 gui=NONE cterm=NONE
+  hi NormalFloat guifg=NONE guibg=#333333 gui=NONE cterm=NONE
   hi Comment guifg=#eaa104 guibg=NONE gui=NONE cterm=NONE
   hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi String guifg=#68c601 guibg=NONE gui=NONE cterm=NONE
@@ -190,8 +190,8 @@ else
     let g:terminal_color_14 = '#05adb4'
     let g:terminal_color_15 = '#121212'
   endif
-  hi Normal guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi NormalFloat guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Normal guifg=#121212 guibg=#eeeeee gui=NONE cterm=NONE
+  hi NormalFloat guifg=NONE guibg=#c6c6c6 gui=NONE cterm=NONE
   hi Comment guifg=#946401 guibg=NONE gui=NONE cterm=NONE
   hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi String guifg=#376e00 guibg=NONE gui=NONE cterm=NONE
@@ -863,6 +863,9 @@ endif
 " Color: term12        #67abff           12                12 ; blue
 " Color: term13        #ff83ff           13                13 ; magenta
 " Color: term14        #38e1e2           14                14 ; cyan
+" Color: fg0           #eeeeee           255
+" Color: bg0           #080808           232
+" Color: bg2           #333333           236
 " Term Colors: term0 term1 term2 term3 term4 term5 term6 term7 term8 term9 term10 term11 term12 term13 term14 term15
 " Background: light
 " Color: term1         #a5092d           1                 1
@@ -881,6 +884,9 @@ endif
 " Color: term12        #2a7bff           12                12
 " Color: term13        #bf46d9           13                13
 " Color: term14        #05adb4           14                14
+" Color: fg0           #121212           233
+" Color: bg0           #eeeeee           255
+" Color: bg2           #c6c6c6           251
 " Term Colors: term0 term1 term2 term3 term4 term5 term6 term7 term8 term9 term10 term11 term12 term13 term14 term15
 " Background: any
 " vim: et ts=8 sw=2 sts=2
