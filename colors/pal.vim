@@ -29,9 +29,11 @@ hi! link Terminal Normal
 hi! link StatusLineTerm StatusLine
 hi! link StatusLineTermNC StatusLineNC
 if has('nvim-0.8')
-  hi! link @variable.builtin @variable
+  hi! link @variable Identifier
+  hi! link @variable.builtin Identifier
+  hi! link @variable.parameter.builtin Identifier
   hi! link @constant.builtin Constant
-  hi! link @module NONE
+  hi! link @module Identifier
   hi! link @module.builtin Constant
   hi! link @type.builtin Constant
   hi! link @type.definition Type
@@ -53,7 +55,7 @@ if has('nvim-0.8')
   hi! link @markup.raw.block NONE
   hi! link @markup.list Statement
   hi! link @tag Statement
-  hi! link @tag.attribute NONE
+  hi! link @tag.attribute Identifier
 endif
 hi! link LspCodeLens NonText
 hi! link LspCodeLensSeparator NonText

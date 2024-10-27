@@ -38,14 +38,15 @@ StatusLineTermNC     -> StatusLineNC
 ; See also :h treesitter-highlight-groups
 #if has('nvim-0.8')
   ; identifiers
-  ; @variable
-  @variable.builtin  -> @variable
+  @variable          -> Identifier
+  @variable.builtin  -> Identifier
   ; @variable.parameter
+  @variable.parameter.builtin -> Identifier
   ; @variable.member
   ; @constant
   @constant.builtin  -> Constant
   ; @constant.macro
-  @module            -> NONE
+  @module            -> Identifier
   @module.builtin    -> Constant
   ; @label
 
@@ -137,7 +138,7 @@ StatusLineTermNC     -> StatusLineNC
   ; @diff.delta
 
   @tag               -> Statement
-  @tag.attribute     -> NONE
+  @tag.attribute     -> Identifier
   ; @tag.delimiter
 #endif
 ; }}}
