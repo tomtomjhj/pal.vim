@@ -155,9 +155,9 @@ if &background ==# 'dark'
   hi SpellRare guifg=NONE guibg=NONE guisp=#0accd5 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi StatusLine guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi StatusLineNC guifg=#777777 guibg=NONE gui=bold,reverse cterm=bold,reverse
-  hi TabLine guifg=NONE guibg=#777777 gui=bold cterm=bold
-  hi TabLineFill guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
-  hi TabLineSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+  hi TabLine guifg=NONE guibg=#777777 gui=nocombine cterm=nocombine
+  hi TabLineFill guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
+  hi TabLineSel guifg=NONE guibg=NONE gui=bold,nocombine ctermfg=NONE ctermbg=NONE cterm=bold,nocombine
   hi Title guifg=#e573ff guibg=NONE gui=bold,underline cterm=bold,underline
   hi VertSplit guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Visual guifg=#777777 guibg=NONE gui=reverse cterm=reverse
@@ -252,9 +252,9 @@ else
   hi SpellRare guifg=NONE guibg=NONE guisp=#047e83 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
   hi StatusLine guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi StatusLineNC guifg=#999999 guibg=NONE gui=bold,reverse cterm=bold,reverse
-  hi TabLine guifg=NONE guibg=#999999 gui=bold cterm=bold
-  hi TabLineFill guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
-  hi TabLineSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
+  hi TabLine guifg=NONE guibg=#999999 gui=nocombine cterm=nocombine
+  hi TabLineFill guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
+  hi TabLineSel guifg=NONE guibg=NONE gui=bold,nocombine ctermfg=NONE ctermbg=NONE cterm=bold,nocombine
   hi Title guifg=#8a299e guibg=NONE gui=bold,underline cterm=bold,underline
   hi VertSplit guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Visual guifg=#999999 guibg=NONE gui=reverse cterm=reverse
@@ -337,9 +337,9 @@ if s:t_Co >= 256
     endif
     hi StatusLine ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi StatusLineNC ctermfg=8 ctermbg=NONE cterm=bold,reverse
-    hi TabLine ctermfg=NONE ctermbg=8 cterm=bold
-    hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
+    hi TabLine ctermfg=NONE ctermbg=8 cterm=nocombine
+    hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=underline
+    hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold,nocombine
     hi Title ctermfg=5 ctermbg=NONE cterm=bold,underline
     hi VertSplit ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Visual ctermfg=8 ctermbg=NONE cterm=reverse
@@ -420,9 +420,9 @@ if s:t_Co >= 256
     endif
     hi StatusLine ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi StatusLineNC ctermfg=8 ctermbg=NONE cterm=bold,reverse
-    hi TabLine ctermfg=NONE ctermbg=8 cterm=bold
-    hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
+    hi TabLine ctermfg=NONE ctermbg=8 cterm=nocombine
+    hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=underline
+    hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold,nocombine
     hi Title ctermfg=5 ctermbg=NONE cterm=bold,underline
     hi VertSplit ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Visual ctermfg=8 ctermbg=NONE cterm=reverse
@@ -508,9 +508,9 @@ if s:t_Co >= 16
     endif
     hi StatusLine ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi StatusLineNC ctermfg=8 ctermbg=NONE cterm=bold,reverse
-    hi TabLine ctermfg=NONE ctermbg=8 cterm=bold
-    hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
+    hi TabLine ctermfg=NONE ctermbg=8 cterm=nocombine
+    hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=underline
+    hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold,nocombine
     hi Title ctermfg=5 ctermbg=NONE cterm=bold,underline
     hi VertSplit ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Visual ctermfg=8 ctermbg=NONE cterm=reverse
@@ -591,9 +591,9 @@ if s:t_Co >= 16
     endif
     hi StatusLine ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi StatusLineNC ctermfg=8 ctermbg=NONE cterm=bold,reverse
-    hi TabLine ctermfg=NONE ctermbg=8 cterm=bold
-    hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
+    hi TabLine ctermfg=NONE ctermbg=8 cterm=nocombine
+    hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=underline
+    hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold,nocombine
     hi Title ctermfg=5 ctermbg=NONE cterm=bold,underline
     hi VertSplit ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Visual ctermfg=8 ctermbg=NONE cterm=reverse
@@ -679,9 +679,9 @@ if s:t_Co >= 8
     endif
     hi StatusLine ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi StatusLineNC ctermfg=NONE ctermbg=NONE cterm=bold,underline
-    hi TabLine ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-    hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
+    hi TabLine ctermfg=NONE ctermbg=NONE cterm=nocombine,reverse
+    hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=underline
+    hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold,nocombine
     hi Title ctermfg=5 ctermbg=NONE cterm=bold,underline
     hi VertSplit ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Visual ctermfg=3 ctermbg=NONE cterm=reverse
@@ -762,9 +762,9 @@ if s:t_Co >= 8
     endif
     hi StatusLine ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi StatusLineNC ctermfg=NONE ctermbg=NONE cterm=bold,underline
-    hi TabLine ctermfg=NONE ctermbg=NONE cterm=bold,reverse
-    hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=reverse
-    hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold
+    hi TabLine ctermfg=NONE ctermbg=NONE cterm=nocombine,reverse
+    hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=underline
+    hi TabLineSel ctermfg=NONE ctermbg=NONE cterm=bold,nocombine
     hi Title ctermfg=5 ctermbg=NONE cterm=bold,underline
     hi VertSplit ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Visual ctermfg=3 ctermbg=NONE cterm=reverse

@@ -134,12 +134,12 @@ StatusLineNC         term8             none              bold,reverse
 Variant: 8
 StatusLineNC         none              none              bold,underline
 Variant: 16 256 gui
-TabLine              none              term8             bold
+TabLine              none              term8             nocombine
 Variant: 8
-TabLine              none              none              bold,reverse
+TabLine              none              none              reverse,nocombine
 Variant: 8 16 256 gui
-TabLineFill          none              none              reverse
-TabLineSel           none              none              bold
+TabLineFill          none              none              underline
+TabLineSel           none              none              bold,nocombine
 Title                term5             none              bold,underline
 VertSplit            none              none
 Variant: 16 256 gui
