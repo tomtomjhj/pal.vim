@@ -98,19 +98,19 @@ if &background ==# 'dark'
   hi Normal guifg=#eeeeee guibg=#080808 gui=NONE cterm=NONE
   hi NormalFloat guifg=NONE guibg=#333333 gui=NONE cterm=NONE
   hi Comment guifg=#eaa104 guibg=NONE gui=NONE cterm=NONE
-  hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Constant guifg=#eeeeee guibg=NONE gui=NONE cterm=NONE
   hi String guifg=#68c601 guibg=NONE gui=NONE cterm=NONE
-  hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Identifier guifg=#eeeeee guibg=NONE gui=NONE cterm=NONE
   hi Function guifg=#e573ff guibg=NONE gui=NONE cterm=NONE
   hi Statement guifg=#5696ff guibg=NONE gui=NONE cterm=NONE
   hi PreProc guifg=#0accd5 guibg=NONE gui=NONE cterm=NONE
-  hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Special guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-  hi Delimiter guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Type guifg=#eeeeee guibg=NONE gui=NONE cterm=NONE
+  hi Special guifg=#eeeeee guibg=NONE gui=bold cterm=bold
+  hi Delimiter guifg=#eeeeee guibg=NONE gui=NONE cterm=NONE
   hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
-  hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Error guifg=#ff5163 guibg=NONE gui=bold,reverse cterm=bold,reverse
-  hi Todo guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi Ignore guifg=#eeeeee guibg=NONE gui=NONE cterm=NONE
+  hi Error guifg=#ff5163 guibg=#080808 gui=bold,reverse cterm=bold,reverse
+  hi Todo guifg=#eeeeee guibg=#080808 gui=bold,reverse cterm=bold,reverse
   hi Added guifg=#68c601 guibg=NONE gui=NONE cterm=NONE
   hi Changed guifg=#0accd5 guibg=NONE gui=NONE cterm=NONE
   hi Removed guifg=#ff5163 guibg=NONE gui=NONE cterm=NONE
@@ -195,19 +195,19 @@ else
   hi Normal guifg=#121212 guibg=#eeeeee gui=NONE cterm=NONE
   hi NormalFloat guifg=NONE guibg=#c6c6c6 gui=NONE cterm=NONE
   hi Comment guifg=#946401 guibg=NONE gui=NONE cterm=NONE
-  hi Constant guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Constant guifg=#121212 guibg=NONE gui=NONE cterm=NONE
   hi String guifg=#376e00 guibg=NONE gui=NONE cterm=NONE
-  hi Identifier guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Identifier guifg=#121212 guibg=NONE gui=NONE cterm=NONE
   hi Function guifg=#8a299e guibg=NONE gui=NONE cterm=NONE
   hi Statement guifg=#0d53bd guibg=NONE gui=NONE cterm=NONE
   hi PreProc guifg=#047e83 guibg=NONE gui=NONE cterm=NONE
-  hi Type guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Special guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-  hi Delimiter guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Type guifg=#121212 guibg=NONE gui=NONE cterm=NONE
+  hi Special guifg=#121212 guibg=NONE gui=bold cterm=bold
+  hi Delimiter guifg=#121212 guibg=NONE gui=NONE cterm=NONE
   hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
-  hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi Error guifg=#a5092d guibg=NONE gui=bold,reverse cterm=bold,reverse
-  hi Todo guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi Ignore guifg=#121212 guibg=NONE gui=NONE cterm=NONE
+  hi Error guifg=#a5092d guibg=#eeeeee gui=bold,reverse cterm=bold,reverse
+  hi Todo guifg=#121212 guibg=#eeeeee gui=bold,reverse cterm=bold,reverse
   hi Added guifg=#376e00 guibg=NONE gui=NONE cterm=NONE
   hi Changed guifg=#047e83 guibg=NONE gui=NONE cterm=NONE
   hi Removed guifg=#a5092d guibg=NONE gui=NONE cterm=NONE

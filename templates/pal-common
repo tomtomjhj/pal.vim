@@ -10,11 +10,11 @@ NormalFloat          none              none
 Variant: 8 16 256 gui
 
 ; :help group-name
-Variant: 16 256 gui
+Variant: 16 256
 Comment              term3             none
 Variant: 8
 Comment              none              none              bold
-Variant: 8 16 256 gui
+Variant: 8 16 256
 Constant             none              none
 String               term2             none
 Identifier           none              none
@@ -31,6 +31,29 @@ Todo                 none              none              reverse,bold
 Added                term2             none
 Changed              term6             none
 Removed              term1             none
+
+; For proper treesitter injection highlight,
+; each group should set its own color to avoid inheriting parent's highlight.
+; We do this only for gui as we don't set fg/bg for cterm.
+Variant: gui
+Comment              term3             none
+Constant             fg0               none
+String               term2             none
+Identifier           fg0               none
+Function             term5             none
+Statement            term4             none
+PreProc              term6             none
+Type                 fg0               none
+Special              fg0               none              bold
+Delimiter            fg0               none
+Underlined           none              none              underline
+Ignore               fg0               none
+Error                term1             bg0               reverse,bold
+Todo                 fg0               bg0               reverse,bold
+Added                term2             none
+Changed              term6             none
+Removed              term1             none
+Variant: 8 16 256 gui
 
 ; :help highlight-groups
 Variant: 16 256 gui
