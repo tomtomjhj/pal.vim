@@ -179,6 +179,35 @@ CursorIM             none              none
 ToolbarLine          none              none              reverse
 ToolbarButton        none              none              bold,reverse
 
+; :h diagnostic-highlights
+Variant: 16 256 gui
+DiagnosticError           term9        none
+DiagnosticWarn            term11       none
+DiagnosticInfo            term14       none
+DiagnosticHint            term12       none
+DiagnosticOk              term10       none
+DiagnosticUnderlineError  none         none              undercurl s=term9
+DiagnosticUnderlineWarn   none         none              undercurl s=term11
+DiagnosticUnderlineInfo   none         none              undercurl s=term14
+DiagnosticUnderlineHint   none         none              undercurl s=term12
+DiagnosticUnderlineOk     none         none              undercurl s=term10
+; DiagnosticDeprecated
+DiagnosticUnnecessary     none         none
+Variant: 8
+DiagnosticError           term1        none
+DiagnosticWarn            term3        none
+DiagnosticInfo            term6        none
+DiagnosticHint            term4        none
+DiagnosticOk              term2        none
+DiagnosticUnderlineError  none         none              undercurl s=term1
+DiagnosticUnderlineWarn   none         none              undercurl s=term3
+DiagnosticUnderlineInfo   none         none              undercurl s=term6
+DiagnosticUnderlineHint   none         none              undercurl s=term4
+DiagnosticUnderlineOk     none         none              undercurl s=term2
+; DiagnosticDeprecated
+DiagnosticUnnecessary     none         none
+Variant: 8 16 256 gui
+
 ; plugins and filetypes
 ; flash.nvim
 FlashLabel           term5             none              reverse,bold

@@ -167,6 +167,17 @@ if &background ==# 'dark'
   hi CursorIM guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi ToolbarLine guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
   hi ToolbarButton guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi DiagnosticError guifg=#ff7477 guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticWarn guifg=#ffb32f guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticInfo guifg=#38e1e2 guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticHint guifg=#67abff guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticOk guifg=#78db2f guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticUnderlineError guifg=NONE guibg=NONE guisp=#ff7477 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineWarn guifg=NONE guibg=NONE guisp=#ffb32f gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineInfo guifg=NONE guibg=NONE guisp=#38e1e2 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineHint guifg=NONE guibg=NONE guisp=#67abff gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineOk guifg=NONE guibg=NONE guisp=#78db2f gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnnecessary guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi FlashLabel guifg=#e573ff guibg=NONE gui=bold,reverse cterm=bold,reverse
   hi FlashBackdrop guifg=#777777 guibg=NONE gui=NONE cterm=NONE
 else
@@ -264,6 +275,17 @@ else
   hi CursorIM guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi ToolbarLine guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
   hi ToolbarButton guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+  hi DiagnosticError guifg=#e62848 guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticWarn guifg=#c98a0e guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticInfo guifg=#05adb4 guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticHint guifg=#2a7bff guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticOk guifg=#519c03 guibg=NONE gui=NONE cterm=NONE
+  hi DiagnosticUnderlineError guifg=NONE guibg=NONE guisp=#e62848 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineWarn guifg=NONE guibg=NONE guisp=#c98a0e gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineInfo guifg=NONE guibg=NONE guisp=#05adb4 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineHint guifg=NONE guibg=NONE guisp=#2a7bff gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnderlineOk guifg=NONE guibg=NONE guisp=#519c03 gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
+  hi DiagnosticUnnecessary guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi FlashLabel guifg=#8a299e guibg=NONE gui=bold,reverse cterm=bold,reverse
   hi FlashBackdrop guifg=#999999 guibg=NONE gui=NONE cterm=NONE
 endif
@@ -349,6 +371,17 @@ if s:t_Co >= 256
     hi CursorIM ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=reverse
     hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+    hi DiagnosticError ctermfg=9 ctermbg=NONE cterm=NONE
+    hi DiagnosticWarn ctermfg=11 ctermbg=NONE cterm=NONE
+    hi DiagnosticInfo ctermfg=14 ctermbg=NONE cterm=NONE
+    hi DiagnosticHint ctermfg=12 ctermbg=NONE cterm=NONE
+    hi DiagnosticOk ctermfg=10 ctermbg=NONE cterm=NONE
+    hi DiagnosticUnderlineError ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineWarn ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineHint ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnnecessary ctermfg=NONE ctermbg=NONE cterm=NONE
     hi FlashLabel ctermfg=5 ctermbg=NONE cterm=bold,reverse
     hi FlashBackdrop ctermfg=8 ctermbg=NONE cterm=NONE
   else
@@ -432,6 +465,17 @@ if s:t_Co >= 256
     hi CursorIM ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=reverse
     hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+    hi DiagnosticError ctermfg=9 ctermbg=NONE cterm=NONE
+    hi DiagnosticWarn ctermfg=11 ctermbg=NONE cterm=NONE
+    hi DiagnosticInfo ctermfg=14 ctermbg=NONE cterm=NONE
+    hi DiagnosticHint ctermfg=12 ctermbg=NONE cterm=NONE
+    hi DiagnosticOk ctermfg=10 ctermbg=NONE cterm=NONE
+    hi DiagnosticUnderlineError ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineWarn ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineHint ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnnecessary ctermfg=NONE ctermbg=NONE cterm=NONE
     hi FlashLabel ctermfg=5 ctermbg=NONE cterm=bold,reverse
     hi FlashBackdrop ctermfg=8 ctermbg=NONE cterm=NONE
   endif
@@ -520,6 +564,17 @@ if s:t_Co >= 16
     hi CursorIM ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=reverse
     hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+    hi DiagnosticError ctermfg=9 ctermbg=NONE cterm=NONE
+    hi DiagnosticWarn ctermfg=11 ctermbg=NONE cterm=NONE
+    hi DiagnosticInfo ctermfg=14 ctermbg=NONE cterm=NONE
+    hi DiagnosticHint ctermfg=12 ctermbg=NONE cterm=NONE
+    hi DiagnosticOk ctermfg=10 ctermbg=NONE cterm=NONE
+    hi DiagnosticUnderlineError ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineWarn ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineHint ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnnecessary ctermfg=NONE ctermbg=NONE cterm=NONE
     hi FlashLabel ctermfg=5 ctermbg=NONE cterm=bold,reverse
     hi FlashBackdrop ctermfg=8 ctermbg=NONE cterm=NONE
   else
@@ -603,6 +658,17 @@ if s:t_Co >= 16
     hi CursorIM ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=reverse
     hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+    hi DiagnosticError ctermfg=9 ctermbg=NONE cterm=NONE
+    hi DiagnosticWarn ctermfg=11 ctermbg=NONE cterm=NONE
+    hi DiagnosticInfo ctermfg=14 ctermbg=NONE cterm=NONE
+    hi DiagnosticHint ctermfg=12 ctermbg=NONE cterm=NONE
+    hi DiagnosticOk ctermfg=10 ctermbg=NONE cterm=NONE
+    hi DiagnosticUnderlineError ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineWarn ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineHint ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnnecessary ctermfg=NONE ctermbg=NONE cterm=NONE
     hi FlashLabel ctermfg=5 ctermbg=NONE cterm=bold,reverse
     hi FlashBackdrop ctermfg=8 ctermbg=NONE cterm=NONE
   endif
@@ -691,6 +757,17 @@ if s:t_Co >= 8
     hi CursorIM ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=reverse
     hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+    hi DiagnosticError ctermfg=1 ctermbg=NONE cterm=NONE
+    hi DiagnosticWarn ctermfg=3 ctermbg=NONE cterm=NONE
+    hi DiagnosticInfo ctermfg=6 ctermbg=NONE cterm=NONE
+    hi DiagnosticHint ctermfg=4 ctermbg=NONE cterm=NONE
+    hi DiagnosticOk ctermfg=2 ctermbg=NONE cterm=NONE
+    hi DiagnosticUnderlineError ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineWarn ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineHint ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnnecessary ctermfg=NONE ctermbg=NONE cterm=NONE
     hi FlashLabel ctermfg=5 ctermbg=NONE cterm=bold,reverse
     hi FlashBackdrop ctermfg=NONE ctermbg=NONE cterm=NONE
   else
@@ -774,6 +851,17 @@ if s:t_Co >= 8
     hi CursorIM ctermfg=NONE ctermbg=NONE cterm=NONE
     hi ToolbarLine ctermfg=NONE ctermbg=NONE cterm=reverse
     hi ToolbarButton ctermfg=NONE ctermbg=NONE cterm=bold,reverse
+    hi DiagnosticError ctermfg=1 ctermbg=NONE cterm=NONE
+    hi DiagnosticWarn ctermfg=3 ctermbg=NONE cterm=NONE
+    hi DiagnosticInfo ctermfg=6 ctermbg=NONE cterm=NONE
+    hi DiagnosticHint ctermfg=4 ctermbg=NONE cterm=NONE
+    hi DiagnosticOk ctermfg=2 ctermbg=NONE cterm=NONE
+    hi DiagnosticUnderlineError ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineWarn ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineInfo ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineHint ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnderlineOk ctermfg=NONE ctermbg=NONE cterm=undercurl
+    hi DiagnosticUnnecessary ctermfg=NONE ctermbg=NONE cterm=NONE
     hi FlashLabel ctermfg=5 ctermbg=NONE cterm=bold,reverse
     hi FlashBackdrop ctermfg=NONE ctermbg=NONE cterm=NONE
   endif
