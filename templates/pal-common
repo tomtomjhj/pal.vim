@@ -92,7 +92,30 @@ NonText              term8             none              nocombine
 Variant: 8
 NonText              term3             none              nocombine
 Variant: 8 16 256 gui
-Variant: 16 256 gui
+Variant: gui
+; In vim, this doesn't work as intended because termguicolors use cterm attr
+#if has('nvim')
+Pmenu                none              term8
+PmenuExtra           none              term8
+PmenuKind            none              term8             bold
+PmenuMatch           none              term8             bold
+PmenuSbar            none              term8
+PmenuSel             bg0               fg0               bold,underline
+PmenuExtraSel        bg0               fg0               bold,underline
+PmenuKindSel         bg0               fg0               bold underline
+PmenuMatchSel        bg0               fg0               bold underline
+#else
+Pmenu                none              term8
+PmenuExtra           none              term8
+PmenuKind            none              term8             bold
+PmenuMatch           none              term8             bold
+PmenuSbar            none              term8
+PmenuSel             none              none              reverse,bold,underline
+PmenuExtraSel        none              none              reverse,bold,underline
+PmenuKindSel         none              none              reverse,bold underline
+PmenuMatchSel        none              none              reverse,bold underline
+#endif
+Variant: 16 256
 ; ; This doesn't work well with cmp, which implements PmenuSel with winhighlight for CursorLine.
 ; ; - combining reverse with reverse doens't un-reverse
 ; ; - nocombine doesn't prevent combining of cursorline, because cursorline is the base highlight, and the original line highlight is combined on top of it.

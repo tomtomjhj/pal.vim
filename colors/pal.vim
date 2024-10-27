@@ -134,15 +134,27 @@ if &background ==# 'dark'
   hi ModeMsg guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi NonText guifg=#777777 guibg=NONE gui=nocombine cterm=nocombine
-  hi Pmenu guifg=NONE guibg=#777777 gui=NONE cterm=NONE
-  hi PmenuExtra guifg=NONE guibg=#777777 gui=NONE cterm=NONE
-  hi PmenuKind guifg=NONE guibg=#777777 gui=bold cterm=bold
-  hi PmenuMatch guifg=NONE guibg=#777777 gui=bold cterm=bold
-  hi PmenuSbar guifg=NONE guibg=#777777 gui=NONE cterm=NONE
-  hi PmenuSel guifg=NONE guibg=NONE gui=bold,reverse,underline ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
-  hi PmenuExtraSel guifg=NONE guibg=NONE gui=bold,reverse,underline ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
-  hi PmenuKindSel guifg=NONE guibg=NONE gui=bold,reverse,underline ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
-  hi PmenuMatchSel guifg=NONE guibg=NONE gui=bold,reverse,underline ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
+  if has('nvim')
+    hi Pmenu guifg=NONE guibg=#777777 gui=NONE cterm=NONE
+    hi PmenuExtra guifg=NONE guibg=#777777 gui=NONE cterm=NONE
+    hi PmenuKind guifg=NONE guibg=#777777 gui=bold cterm=bold
+    hi PmenuMatch guifg=NONE guibg=#777777 gui=bold cterm=bold
+    hi PmenuSbar guifg=NONE guibg=#777777 gui=NONE cterm=NONE
+    hi PmenuSel guifg=#080808 guibg=#eeeeee gui=bold,underline cterm=bold,underline
+    hi PmenuExtraSel guifg=#080808 guibg=#eeeeee gui=bold,underline cterm=bold,underline
+    hi PmenuKindSel guifg=#080808 guibg=#eeeeee gui=bold,underline cterm=bold,underline
+    hi PmenuMatchSel guifg=#080808 guibg=#eeeeee gui=bold,underline cterm=bold,underline
+  else
+    hi Pmenu guifg=NONE guibg=#777777 gui=NONE cterm=NONE
+    hi PmenuExtra guifg=NONE guibg=#777777 gui=NONE cterm=NONE
+    hi PmenuKind guifg=NONE guibg=#777777 gui=bold cterm=bold
+    hi PmenuMatch guifg=NONE guibg=#777777 gui=bold cterm=bold
+    hi PmenuSbar guifg=NONE guibg=#777777 gui=NONE cterm=NONE
+    hi PmenuSel guifg=NONE guibg=NONE gui=bold,reverse,underline ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
+    hi PmenuExtraSel guifg=NONE guibg=NONE gui=bold,reverse,underline ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
+    hi PmenuKindSel guifg=NONE guibg=NONE gui=bold,reverse,underline ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
+    hi PmenuMatchSel guifg=NONE guibg=NONE gui=bold,reverse,underline ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
+  endif
   hi PmenuThumb guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Question guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi QuickFixLine guifg=#e573ff guibg=NONE gui=reverse cterm=reverse
@@ -242,15 +254,27 @@ else
   hi ModeMsg guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi NonText guifg=#999999 guibg=NONE gui=nocombine cterm=nocombine
-  hi Pmenu guifg=NONE guibg=#999999 gui=NONE cterm=NONE
-  hi PmenuExtra guifg=NONE guibg=#999999 gui=NONE cterm=NONE
-  hi PmenuKind guifg=NONE guibg=#999999 gui=bold cterm=bold
-  hi PmenuMatch guifg=NONE guibg=#999999 gui=bold cterm=bold
-  hi PmenuSbar guifg=NONE guibg=#999999 gui=NONE cterm=NONE
-  hi PmenuSel guifg=NONE guibg=NONE gui=bold,reverse,underline ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
-  hi PmenuExtraSel guifg=NONE guibg=NONE gui=bold,reverse,underline ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
-  hi PmenuKindSel guifg=NONE guibg=NONE gui=bold,reverse,underline ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
-  hi PmenuMatchSel guifg=NONE guibg=NONE gui=bold,reverse,underline ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
+  if has('nvim')
+    hi Pmenu guifg=NONE guibg=#999999 gui=NONE cterm=NONE
+    hi PmenuExtra guifg=NONE guibg=#999999 gui=NONE cterm=NONE
+    hi PmenuKind guifg=NONE guibg=#999999 gui=bold cterm=bold
+    hi PmenuMatch guifg=NONE guibg=#999999 gui=bold cterm=bold
+    hi PmenuSbar guifg=NONE guibg=#999999 gui=NONE cterm=NONE
+    hi PmenuSel guifg=#eeeeee guibg=#121212 gui=bold,underline cterm=bold,underline
+    hi PmenuExtraSel guifg=#eeeeee guibg=#121212 gui=bold,underline cterm=bold,underline
+    hi PmenuKindSel guifg=#eeeeee guibg=#121212 gui=bold,underline cterm=bold,underline
+    hi PmenuMatchSel guifg=#eeeeee guibg=#121212 gui=bold,underline cterm=bold,underline
+  else
+    hi Pmenu guifg=NONE guibg=#999999 gui=NONE cterm=NONE
+    hi PmenuExtra guifg=NONE guibg=#999999 gui=NONE cterm=NONE
+    hi PmenuKind guifg=NONE guibg=#999999 gui=bold cterm=bold
+    hi PmenuMatch guifg=NONE guibg=#999999 gui=bold cterm=bold
+    hi PmenuSbar guifg=NONE guibg=#999999 gui=NONE cterm=NONE
+    hi PmenuSel guifg=NONE guibg=NONE gui=bold,reverse,underline ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
+    hi PmenuExtraSel guifg=NONE guibg=NONE gui=bold,reverse,underline ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
+    hi PmenuKindSel guifg=NONE guibg=NONE gui=bold,reverse,underline ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
+    hi PmenuMatchSel guifg=NONE guibg=NONE gui=bold,reverse,underline ctermfg=NONE ctermbg=NONE cterm=bold,reverse,underline
+  endif
   hi PmenuThumb guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi Question guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi QuickFixLine guifg=#8a299e guibg=NONE gui=reverse cterm=reverse
