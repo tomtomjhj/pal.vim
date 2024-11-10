@@ -177,37 +177,37 @@ Background: dark
 ; Not using the named colors, because the actual meaning depends on t_Co (e.g. darkgrey is 242 t_Co=256).
 ; Error DiffDelete diffRemoved SpellBad
 ; ~~Constant~~
-Color: term1         #ff5163           1                 1  ; darkred
+Color: term1         #ff7d81           1                 1  ; darkred
 ; DiffAdd diffAdded
 ; String
-Color: term2         #68c601           2                 2  ; darkgreen
+Color: term2         #73c660           2                 2  ; darkgreen
 ; IncSearch ~~Conceal~~
 ; 8: Visual NonText
 ; >16: Comment
-Color: term3         #eaa104           3                 3  ; darkyellow
+Color: term3         #e1a103           3                 3  ; darkyellow
 ; DiffChange SpellCap
 ; Statement, Title, Directory
-Color: term4         #5696ff           4                 4  ; darkblue
+Color: term4         #6da4ff           4                 4  ; darkblue
 ; DiffText QuickFixLine CurSearch SpellLocal
 ; Function
-Color: term5         #e573ff           5                 5  ; darkmagenta
+Color: term5         #da8aec           5                 5  ; darkmagenta
 ; [x] Search SpellRare
 ; PreProc
-Color: term6         #0accd5           6                 6  ; darkcyan
+Color: term6         #04c5ce           6                 6  ; darkcyan
 ; Can't assume about relation between 1,7,15 and bg/fg,
 ; but it's clear that 8 will have some contrast with all of them.
 ; >16: Visual NonText
 Color: term8         #777777           8                 8  ; darkgrey
-; not used
 Color: term0         #080808           0                 0
 Color: term7         #d0d0d0           7                 7
+; only for ui
 Color: term15        #eeeeee           15                15
-Color: term9         #ff7477           9                 9  ; red
-Color: term10        #78db2f           10                10 ; green
-Color: term11        #ffb32f           11                11 ; yellow
-Color: term12        #67abff           12                12 ; blue
-Color: term13        #ff83ff           13                13 ; magenta
-Color: term14        #38e1e2           14                14 ; cyan
+Color: term9         #ffafae           9                 9  ; red
+Color: term10        #8fe47d           10                10 ; green
+Color: term11        #ffbe3e           11                11 ; yellow
+Color: term12        #9dc2ff           12                12 ; blue
+Color: term13        #f0aeff           13                13 ; magenta
+Color: term14        #06e6ef           14                14 ; cyan
 
 ; The 256 values are just placeholders. These colors should be used only in gui.
 Color: fg0           #eeeeee           255
@@ -220,23 +220,23 @@ Include: pal-common
 ; Background: light {{{
 Background: light
 
-Color: term1         #a5092d           1                 1
-Color: term2         #376e00           2                 2
-Color: term3         #946401           3                 3
-Color: term4         #0d53bd           4                 4
-Color: term5         #8a299e           5                 5
-Color: term6         #047e83           6                 6
+Color: term1         #a52836           1                 1
+Color: term2         #207400           2                 2
+Color: term3         #8d6300           3                 3
+Color: term4         #1f58b6           4                 4
+Color: term5         #833794           5                 5
+Color: term6         #017b80           6                 6
 Color: term8         #999999           8                 8
 
 Color: term0         #eeeeee           0                 0
 Color: term7         #3a3a3a           7                 7
 Color: term15        #121212           15                15
-Color: term9         #e62848           9                 9
-Color: term10        #519c03           10                10
-Color: term11        #c98a0e           11                11
-Color: term12        #2a7bff           12                12
-Color: term13        #bf46d9           13                13
-Color: term14        #05adb4           14                14
+Color: term9         #d5565d           9                 9
+Color: term10        #4d9f3a           10                10
+Color: term11        #c18a04           11                11
+Color: term12        #4983e5           12                12
+Color: term13        #af62c1           13                13
+Color: term14        #07aab1           14                14
 
 Color: fg0           #121212           233
 Color: bg0           #eeeeee           255
