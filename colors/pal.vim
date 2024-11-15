@@ -61,17 +61,24 @@ hi! link LspCodeLens NonText
 hi! link LspCodeLensSeparator NonText
 hi! link diffAdded Added
 hi! link diffRemoved Removed
+hi! link diffFile PreProc
+hi! link diffOldFile Function
+hi! link diffNewFile Function
+hi! link diffIndexLine Ignore
+hi! link diffSubname NONE
 hi! link coqKwd Keyword
 hi! link coqProofDelim PreProc
 hi! link helpHyperTextJump Underlined
 hi! link helpOption Underlined
 hi! link markdownCode String
-hi! link texMathZone NONE
-hi! link texRefArg NONE
+hi! link texCmdType Statement
+hi! link texMathZone String
+hi! link texRefArg Underlined
 hi! link texMathEnvArgName PreProc
 hi! link texMathDelimZone PreProc
 hi! link texPartArgTitle Title
 hi! link texTitleArg Title
+hi! link texZone NONE
 
 if &background ==# 'dark'
   if (has('termguicolors') && &termguicolors) || has('gui_running')
@@ -108,14 +115,14 @@ if &background ==# 'dark'
   hi Special guifg=#eeeeee guibg=NONE gui=bold cterm=bold
   hi Delimiter guifg=#eeeeee guibg=NONE gui=NONE cterm=NONE
   hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
-  hi Ignore guifg=#eeeeee guibg=NONE gui=NONE cterm=NONE
+  hi Ignore guifg=#777777 guibg=NONE gui=NONE cterm=NONE
   hi Error guifg=#ff7d81 guibg=#080808 gui=bold,reverse cterm=bold,reverse
   hi Todo guifg=#eeeeee guibg=#080808 gui=bold,reverse cterm=bold,reverse
   hi Added guifg=#73c660 guibg=NONE gui=NONE cterm=NONE
   hi Changed guifg=#04c5ce guibg=NONE gui=NONE cterm=NONE
   hi Removed guifg=#ff7d81 guibg=NONE gui=NONE cterm=NONE
   hi ColorColumn guifg=NONE guibg=#777777 gui=NONE cterm=NONE
-  hi Conceal guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Conceal guifg=#9dc2ff guibg=NONE gui=NONE cterm=NONE
   hi Cursor guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
   hi CursorColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi CursorLine guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
@@ -228,14 +235,14 @@ else
   hi Special guifg=#121212 guibg=NONE gui=bold cterm=bold
   hi Delimiter guifg=#121212 guibg=NONE gui=NONE cterm=NONE
   hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
-  hi Ignore guifg=#121212 guibg=NONE gui=NONE cterm=NONE
+  hi Ignore guifg=#999999 guibg=NONE gui=NONE cterm=NONE
   hi Error guifg=#a52836 guibg=#eeeeee gui=bold,reverse cterm=bold,reverse
   hi Todo guifg=#121212 guibg=#eeeeee gui=bold,reverse cterm=bold,reverse
   hi Added guifg=#207400 guibg=NONE gui=NONE cterm=NONE
   hi Changed guifg=#017b80 guibg=NONE gui=NONE cterm=NONE
   hi Removed guifg=#a52836 guibg=NONE gui=NONE cterm=NONE
   hi ColorColumn guifg=NONE guibg=#999999 gui=NONE cterm=NONE
-  hi Conceal guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Conceal guifg=#4983e5 guibg=NONE gui=NONE cterm=NONE
   hi Cursor guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
   hi CursorColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi CursorLine guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
@@ -329,14 +336,14 @@ if s:t_Co >= 256
     hi Special ctermfg=NONE ctermbg=NONE cterm=bold
     hi Delimiter ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
-    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Ignore ctermfg=8 ctermbg=NONE cterm=NONE
     hi Error ctermfg=1 ctermbg=NONE cterm=bold,reverse
     hi Todo ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi Added ctermfg=2 ctermbg=NONE cterm=NONE
     hi Changed ctermfg=6 ctermbg=NONE cterm=NONE
     hi Removed ctermfg=1 ctermbg=NONE cterm=NONE
     hi ColorColumn ctermfg=NONE ctermbg=8 cterm=NONE
-    hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Conceal ctermfg=12 ctermbg=NONE cterm=NONE
     hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
     hi CursorColumn ctermfg=NONE ctermbg=NONE cterm=NONE
     hi CursorLine ctermfg=NONE ctermbg=NONE cterm=underline
@@ -423,14 +430,14 @@ if s:t_Co >= 256
     hi Special ctermfg=NONE ctermbg=NONE cterm=bold
     hi Delimiter ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
-    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Ignore ctermfg=8 ctermbg=NONE cterm=NONE
     hi Error ctermfg=1 ctermbg=NONE cterm=bold,reverse
     hi Todo ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi Added ctermfg=2 ctermbg=NONE cterm=NONE
     hi Changed ctermfg=6 ctermbg=NONE cterm=NONE
     hi Removed ctermfg=1 ctermbg=NONE cterm=NONE
     hi ColorColumn ctermfg=NONE ctermbg=8 cterm=NONE
-    hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Conceal ctermfg=12 ctermbg=NONE cterm=NONE
     hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
     hi CursorColumn ctermfg=NONE ctermbg=NONE cterm=NONE
     hi CursorLine ctermfg=NONE ctermbg=NONE cterm=underline
@@ -522,14 +529,14 @@ if s:t_Co >= 16
     hi Special ctermfg=NONE ctermbg=NONE cterm=bold
     hi Delimiter ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
-    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Ignore ctermfg=8 ctermbg=NONE cterm=NONE
     hi Error ctermfg=1 ctermbg=NONE cterm=bold,reverse
     hi Todo ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi Added ctermfg=2 ctermbg=NONE cterm=NONE
     hi Changed ctermfg=6 ctermbg=NONE cterm=NONE
     hi Removed ctermfg=1 ctermbg=NONE cterm=NONE
     hi ColorColumn ctermfg=NONE ctermbg=8 cterm=NONE
-    hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Conceal ctermfg=12 ctermbg=NONE cterm=NONE
     hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
     hi CursorColumn ctermfg=NONE ctermbg=NONE cterm=NONE
     hi CursorLine ctermfg=NONE ctermbg=NONE cterm=underline
@@ -616,14 +623,14 @@ if s:t_Co >= 16
     hi Special ctermfg=NONE ctermbg=NONE cterm=bold
     hi Delimiter ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
-    hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Ignore ctermfg=8 ctermbg=NONE cterm=NONE
     hi Error ctermfg=1 ctermbg=NONE cterm=bold,reverse
     hi Todo ctermfg=NONE ctermbg=NONE cterm=bold,reverse
     hi Added ctermfg=2 ctermbg=NONE cterm=NONE
     hi Changed ctermfg=6 ctermbg=NONE cterm=NONE
     hi Removed ctermfg=1 ctermbg=NONE cterm=NONE
     hi ColorColumn ctermfg=NONE ctermbg=8 cterm=NONE
-    hi Conceal ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi Conceal ctermfg=12 ctermbg=NONE cterm=NONE
     hi Cursor ctermfg=NONE ctermbg=NONE cterm=reverse
     hi CursorColumn ctermfg=NONE ctermbg=NONE cterm=NONE
     hi CursorLine ctermfg=NONE ctermbg=NONE cterm=underline

@@ -149,6 +149,11 @@ LspCodeLensSeparator -> NonText
 ; plugins and filetypes {{{
 diffAdded            -> Added
 diffRemoved          -> Removed
+diffFile             -> PreProc
+diffOldFile          -> Function
+diffNewFile          -> Function
+diffIndexLine        -> Ignore
+diffSubname          -> NONE
 ; Coq: {{{
 coqKwd               -> Keyword
 coqProofDelim        -> PreProc
@@ -161,12 +166,14 @@ helpOption           -> Underlined
 markdownCode         -> String
 ; }}}
 ; Tex: {{{
-texMathZone          -> NONE
-texRefArg            -> NONE
+texCmdType           -> Statement
+texMathZone          -> String
+texRefArg            -> Underlined
 texMathEnvArgName    -> PreProc
 texMathDelimZone     -> PreProc
 texPartArgTitle      -> Title
 texTitleArg          -> Title
+texZone              -> NONE
 ; }}}
 ; }}}
 ; }}}

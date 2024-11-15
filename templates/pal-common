@@ -25,7 +25,11 @@ Type                 none              none
 Special              none              none              bold
 Delimiter            none              none
 Underlined           none              none              underline
+Variant: 16 256
+Ignore               term8             none
+Variant: 8
 Ignore               none              none
+Variant: 8 16 256
 Error                term1             none              reverse,bold
 Todo                 none              none              reverse,bold
 Added                term2             none
@@ -47,7 +51,7 @@ Type                 fg0               none
 Special              fg0               none              bold
 Delimiter            fg0               none
 Underlined           none              none              underline
-Ignore               fg0               none
+Ignore               term8             none
 Error                term1             bg0               reverse,bold
 Todo                 fg0               bg0               reverse,bold
 Added                term2             none
@@ -61,7 +65,11 @@ ColorColumn          none              term8
 Variant: 8
 ColorColumn          none              none              reverse
 Variant: 8 16 256 gui
+Variant: 16 256 gui
+Conceal              term12            none
+Variant: 8
 Conceal              none              none
+Variant: 8 16 256 gui
 Cursor               none              none              reverse
 CursorColumn         none              none
 CursorLine           none              none              underline
