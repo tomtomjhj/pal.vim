@@ -140,7 +140,7 @@ if &background ==# 'dark'
   hi MatchParen guifg=NONE guibg=NONE gui=bold,underline ctermfg=NONE ctermbg=NONE cterm=bold,underline
   hi ModeMsg guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi NonText guifg=#777777 guibg=NONE gui=nocombine cterm=nocombine
+  hi NonText guifg=#777777 guibg=NONE gui=NONE cterm=NONE
   if has('nvim')
     hi Pmenu guifg=NONE guibg=#777777 gui=NONE cterm=NONE
     hi PmenuExtra guifg=NONE guibg=#777777 gui=NONE cterm=NONE
@@ -260,7 +260,7 @@ else
   hi MatchParen guifg=NONE guibg=NONE gui=bold,underline ctermfg=NONE ctermbg=NONE cterm=bold,underline
   hi ModeMsg guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
   hi MoreMsg guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-  hi NonText guifg=#999999 guibg=NONE gui=nocombine cterm=nocombine
+  hi NonText guifg=#999999 guibg=NONE gui=NONE cterm=NONE
   if has('nvim')
     hi Pmenu guifg=NONE guibg=#999999 gui=NONE cterm=NONE
     hi PmenuExtra guifg=NONE guibg=#999999 gui=NONE cterm=NONE
@@ -361,7 +361,7 @@ if s:t_Co >= 256
     hi MatchParen ctermfg=NONE ctermbg=NONE cterm=bold,underline
     hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi NonText ctermfg=8 ctermbg=NONE cterm=nocombine
+    hi NonText ctermfg=8 ctermbg=NONE cterm=NONE
     hi Pmenu ctermfg=NONE ctermbg=8 cterm=NONE
     hi PmenuExtra ctermfg=NONE ctermbg=8 cterm=NONE
     hi PmenuKind ctermfg=NONE ctermbg=8 cterm=bold
@@ -455,7 +455,7 @@ if s:t_Co >= 256
     hi MatchParen ctermfg=NONE ctermbg=NONE cterm=bold,underline
     hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi NonText ctermfg=8 ctermbg=NONE cterm=nocombine
+    hi NonText ctermfg=8 ctermbg=NONE cterm=NONE
     hi Pmenu ctermfg=NONE ctermbg=8 cterm=NONE
     hi PmenuExtra ctermfg=NONE ctermbg=8 cterm=NONE
     hi PmenuKind ctermfg=NONE ctermbg=8 cterm=bold
@@ -554,7 +554,7 @@ if s:t_Co >= 16
     hi MatchParen ctermfg=NONE ctermbg=NONE cterm=bold,underline
     hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi NonText ctermfg=8 ctermbg=NONE cterm=nocombine
+    hi NonText ctermfg=8 ctermbg=NONE cterm=NONE
     hi Pmenu ctermfg=NONE ctermbg=8 cterm=NONE
     hi PmenuExtra ctermfg=NONE ctermbg=8 cterm=NONE
     hi PmenuKind ctermfg=NONE ctermbg=8 cterm=bold
@@ -648,7 +648,7 @@ if s:t_Co >= 16
     hi MatchParen ctermfg=NONE ctermbg=NONE cterm=bold,underline
     hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi NonText ctermfg=8 ctermbg=NONE cterm=nocombine
+    hi NonText ctermfg=8 ctermbg=NONE cterm=NONE
     hi Pmenu ctermfg=NONE ctermbg=8 cterm=NONE
     hi PmenuExtra ctermfg=NONE ctermbg=8 cterm=NONE
     hi PmenuKind ctermfg=NONE ctermbg=8 cterm=bold
@@ -747,7 +747,7 @@ if s:t_Co >= 8
     hi MatchParen ctermfg=NONE ctermbg=NONE cterm=bold,underline
     hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi NonText ctermfg=3 ctermbg=NONE cterm=nocombine
+    hi NonText ctermfg=3 ctermbg=NONE cterm=NONE
     hi Pmenu ctermfg=NONE ctermbg=NONE cterm=reverse
     hi PmenuExtra ctermfg=NONE ctermbg=NONE cterm=reverse
     hi PmenuKind ctermfg=NONE ctermbg=NONE cterm=bold,reverse
@@ -841,7 +841,7 @@ if s:t_Co >= 8
     hi MatchParen ctermfg=NONE ctermbg=NONE cterm=bold,underline
     hi ModeMsg ctermfg=NONE ctermbg=NONE cterm=bold
     hi MoreMsg ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi NonText ctermfg=3 ctermbg=NONE cterm=nocombine
+    hi NonText ctermfg=3 ctermbg=NONE cterm=NONE
     hi Pmenu ctermfg=NONE ctermbg=NONE cterm=reverse
     hi PmenuExtra ctermfg=NONE ctermbg=NONE cterm=reverse
     hi PmenuKind ctermfg=NONE ctermbg=NONE cterm=bold,reverse
@@ -922,7 +922,7 @@ if s:t_Co >= 0
   hi MatchParen term=bold,underline
   hi ModeMsg term=bold
   hi MoreMsg term=NONE
-  hi NonText term=nocombine
+  hi NonText term=NONE
   hi Pmenu term=reverse
   hi PmenuSbar term=reverse
   hi PmenuSel term=bold

@@ -96,9 +96,9 @@ MatchParen           none              none              bold,underline
 ModeMsg              none              none              bold
 MoreMsg              none              none
 Variant: 16 256 gui
-NonText              term8             none              nocombine
+NonText              term8             none
 Variant: 8
-NonText              term3             none              nocombine
+NonText              term3             none
 Variant: 8 16 256 gui
 Variant: gui
 ; In vim, this doesn't work as intended because termguicolors use cterm attr
