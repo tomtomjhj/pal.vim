@@ -248,5 +248,15 @@ Variant: 8
 FlashBackdrop        none              none
 Variant: 8 16 256 gui
 
+; CSV
+csvCol1              term2             none
+csvCol2              term5             none
+csvCol3              none              none
+csvCol4              term4             none
+csvCol5              term3             none
+csvCol6              none              none
+csvCol7              term1             none
+csvCol8              term6             none
+
 
 Term Colors: term0 term1 term2 term3 term4 term5 term6 term7 term8 term9 term10 term11 term12 term13 term14 term15

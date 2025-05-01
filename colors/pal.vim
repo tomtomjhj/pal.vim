@@ -199,6 +199,14 @@ if &background ==# 'dark'
   hi DiagnosticUnnecessary guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi FlashLabel guifg=#da8aec guibg=NONE gui=bold,reverse cterm=bold,reverse
   hi FlashBackdrop guifg=#777777 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol1 guifg=#73c660 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol2 guifg=#da8aec guibg=NONE gui=NONE cterm=NONE
+  hi csvCol3 guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi csvCol4 guifg=#6da4ff guibg=NONE gui=NONE cterm=NONE
+  hi csvCol5 guifg=#e1a103 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol6 guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi csvCol7 guifg=#ff7d81 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol8 guifg=#04c5ce guibg=NONE gui=NONE cterm=NONE
 else
   " Light background
   if (has('termguicolors') && &termguicolors) || has('gui_running')
@@ -319,6 +327,14 @@ else
   hi DiagnosticUnnecessary guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
   hi FlashLabel guifg=#833794 guibg=NONE gui=bold,reverse cterm=bold,reverse
   hi FlashBackdrop guifg=#999999 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol1 guifg=#207400 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol2 guifg=#833794 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol3 guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi csvCol4 guifg=#1f58b6 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol5 guifg=#8d6300 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol6 guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi csvCol7 guifg=#a52836 guibg=NONE gui=NONE cterm=NONE
+  hi csvCol8 guifg=#017b80 guibg=NONE gui=NONE cterm=NONE
 endif
 
 if s:t_Co >= 256
@@ -415,6 +431,14 @@ if s:t_Co >= 256
     hi DiagnosticUnnecessary ctermfg=NONE ctermbg=NONE cterm=NONE
     hi FlashLabel ctermfg=5 ctermbg=NONE cterm=bold,reverse
     hi FlashBackdrop ctermfg=8 ctermbg=NONE cterm=NONE
+    hi csvCol1 ctermfg=2 ctermbg=NONE cterm=NONE
+    hi csvCol2 ctermfg=5 ctermbg=NONE cterm=NONE
+    hi csvCol3 ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi csvCol4 ctermfg=4 ctermbg=NONE cterm=NONE
+    hi csvCol5 ctermfg=3 ctermbg=NONE cterm=NONE
+    hi csvCol6 ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi csvCol7 ctermfg=1 ctermbg=NONE cterm=NONE
+    hi csvCol8 ctermfg=6 ctermbg=NONE cterm=NONE
   else
     " Light background
     hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -509,6 +533,14 @@ if s:t_Co >= 256
     hi DiagnosticUnnecessary ctermfg=NONE ctermbg=NONE cterm=NONE
     hi FlashLabel ctermfg=5 ctermbg=NONE cterm=bold,reverse
     hi FlashBackdrop ctermfg=8 ctermbg=NONE cterm=NONE
+    hi csvCol1 ctermfg=2 ctermbg=NONE cterm=NONE
+    hi csvCol2 ctermfg=5 ctermbg=NONE cterm=NONE
+    hi csvCol3 ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi csvCol4 ctermfg=4 ctermbg=NONE cterm=NONE
+    hi csvCol5 ctermfg=3 ctermbg=NONE cterm=NONE
+    hi csvCol6 ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi csvCol7 ctermfg=1 ctermbg=NONE cterm=NONE
+    hi csvCol8 ctermfg=6 ctermbg=NONE cterm=NONE
   endif
   unlet s:t_Co
   finish
@@ -608,6 +640,14 @@ if s:t_Co >= 16
     hi DiagnosticUnnecessary ctermfg=NONE ctermbg=NONE cterm=NONE
     hi FlashLabel ctermfg=5 ctermbg=NONE cterm=bold,reverse
     hi FlashBackdrop ctermfg=8 ctermbg=NONE cterm=NONE
+    hi csvCol1 ctermfg=2 ctermbg=NONE cterm=NONE
+    hi csvCol2 ctermfg=5 ctermbg=NONE cterm=NONE
+    hi csvCol3 ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi csvCol4 ctermfg=4 ctermbg=NONE cterm=NONE
+    hi csvCol5 ctermfg=3 ctermbg=NONE cterm=NONE
+    hi csvCol6 ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi csvCol7 ctermfg=1 ctermbg=NONE cterm=NONE
+    hi csvCol8 ctermfg=6 ctermbg=NONE cterm=NONE
   else
     " Light background
     hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -702,6 +742,14 @@ if s:t_Co >= 16
     hi DiagnosticUnnecessary ctermfg=NONE ctermbg=NONE cterm=NONE
     hi FlashLabel ctermfg=5 ctermbg=NONE cterm=bold,reverse
     hi FlashBackdrop ctermfg=8 ctermbg=NONE cterm=NONE
+    hi csvCol1 ctermfg=2 ctermbg=NONE cterm=NONE
+    hi csvCol2 ctermfg=5 ctermbg=NONE cterm=NONE
+    hi csvCol3 ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi csvCol4 ctermfg=4 ctermbg=NONE cterm=NONE
+    hi csvCol5 ctermfg=3 ctermbg=NONE cterm=NONE
+    hi csvCol6 ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi csvCol7 ctermfg=1 ctermbg=NONE cterm=NONE
+    hi csvCol8 ctermfg=6 ctermbg=NONE cterm=NONE
   endif
   unlet s:t_Co
   finish
@@ -801,6 +849,14 @@ if s:t_Co >= 8
     hi DiagnosticUnnecessary ctermfg=NONE ctermbg=NONE cterm=NONE
     hi FlashLabel ctermfg=5 ctermbg=NONE cterm=bold,reverse
     hi FlashBackdrop ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi csvCol1 ctermfg=2 ctermbg=NONE cterm=NONE
+    hi csvCol2 ctermfg=5 ctermbg=NONE cterm=NONE
+    hi csvCol3 ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi csvCol4 ctermfg=4 ctermbg=NONE cterm=NONE
+    hi csvCol5 ctermfg=3 ctermbg=NONE cterm=NONE
+    hi csvCol6 ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi csvCol7 ctermfg=1 ctermbg=NONE cterm=NONE
+    hi csvCol8 ctermfg=6 ctermbg=NONE cterm=NONE
   else
     " Light background
     hi Normal ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -895,6 +951,14 @@ if s:t_Co >= 8
     hi DiagnosticUnnecessary ctermfg=NONE ctermbg=NONE cterm=NONE
     hi FlashLabel ctermfg=5 ctermbg=NONE cterm=bold,reverse
     hi FlashBackdrop ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi csvCol1 ctermfg=2 ctermbg=NONE cterm=NONE
+    hi csvCol2 ctermfg=5 ctermbg=NONE cterm=NONE
+    hi csvCol3 ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi csvCol4 ctermfg=4 ctermbg=NONE cterm=NONE
+    hi csvCol5 ctermfg=3 ctermbg=NONE cterm=NONE
+    hi csvCol6 ctermfg=NONE ctermbg=NONE cterm=NONE
+    hi csvCol7 ctermfg=1 ctermbg=NONE cterm=NONE
+    hi csvCol8 ctermfg=6 ctermbg=NONE cterm=NONE
   endif
   unlet s:t_Co
   finish
