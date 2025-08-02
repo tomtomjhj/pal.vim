@@ -219,6 +219,7 @@ Color: term14        #06e6ef           14                14 ; cyan
 ; The 256 values are just placeholders. These colors should be used only in gui.
 Color: fg0           #eeeeee           255
 Color: bg0           #080808           232
+Color: bg1           #222222           235
 Color: bg2           #333333           236
 
 Include: pal-common
@@ -247,6 +248,7 @@ Color: term14        #07aab1           14                14
 
 Color: fg0           #121212           233
 Color: bg0           #eeeeee           255
+Color: bg1           #dadada           253
 Color: bg2           #c6c6c6           251
 
 Include: pal-common

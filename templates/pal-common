@@ -85,7 +85,11 @@ FoldColumn           term8             none              reverse
 Variant: 8
 FoldColumn           none              none
 Variant: 8 16 256 gui
+Variant: gui
+Folded               none              bg1
+Variant: 8 16 256
 Folded               none              none
+Variant: 8 16 256 gui
 IncSearch            term3             none              reverse,bold,underline
 Variant: 16 256 gui
 LineNr               term8             none

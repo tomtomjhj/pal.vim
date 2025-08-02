@@ -134,7 +134,7 @@ if &background ==# 'dark'
   hi Directory guifg=#6da4ff guibg=NONE gui=NONE cterm=NONE
   hi ErrorMsg guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi FoldColumn guifg=#777777 guibg=NONE gui=reverse cterm=reverse
-  hi Folded guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Folded guifg=NONE guibg=#222222 gui=NONE cterm=NONE
   hi IncSearch guifg=#e1a103 guibg=NONE gui=bold,reverse,underline cterm=bold,reverse,underline
   hi LineNr guifg=#777777 guibg=NONE gui=NONE cterm=NONE
   hi MatchParen guifg=NONE guibg=NONE gui=bold,underline ctermfg=NONE ctermbg=NONE cterm=bold,underline
@@ -262,7 +262,7 @@ else
   hi Directory guifg=#1f58b6 guibg=NONE gui=NONE cterm=NONE
   hi ErrorMsg guifg=NONE guibg=NONE gui=bold,reverse ctermfg=NONE ctermbg=NONE cterm=bold,reverse
   hi FoldColumn guifg=#999999 guibg=NONE gui=reverse cterm=reverse
-  hi Folded guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+  hi Folded guifg=NONE guibg=#dadada gui=NONE cterm=NONE
   hi IncSearch guifg=#8d6300 guibg=NONE gui=bold,reverse,underline cterm=bold,reverse,underline
   hi LineNr guifg=#999999 guibg=NONE gui=NONE cterm=NONE
   hi MatchParen guifg=NONE guibg=NONE gui=bold,underline ctermfg=NONE ctermbg=NONE cterm=bold,underline
@@ -1050,6 +1050,7 @@ endif
 " Color: term14        #06e6ef           14                14 ; cyan
 " Color: fg0           #eeeeee           255
 " Color: bg0           #080808           232
+" Color: bg1           #222222           235
 " Color: bg2           #333333           236
 " Term Colors: term0 term1 term2 term3 term4 term5 term6 term7 term8 term9 term10 term11 term12 term13 term14 term15
 " Background: light
@@ -1071,6 +1072,7 @@ endif
 " Color: term14        #07aab1           14                14
 " Color: fg0           #121212           233
 " Color: bg0           #eeeeee           255
+" Color: bg1           #dadada           253
 " Color: bg2           #c6c6c6           251
 " Term Colors: term0 term1 term2 term3 term4 term5 term6 term7 term8 term9 term10 term11 term12 term13 term14 term15
 " Background: any
