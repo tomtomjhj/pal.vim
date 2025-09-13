@@ -23,6 +23,7 @@ Statement            term4             none
 PreProc              term6             none
 Type                 none              none
 Special              none              none              bold
+SpecialChar          term1             none
 Delimiter            none              none
 Underlined           none              none              underline
 Variant: 16 256
@@ -49,6 +50,7 @@ Statement            term4             none
 PreProc              term6             none
 Type                 fg0               none
 Special              fg0               none              bold
+SpecialChar          term1             none
 Delimiter            fg0               none
 Underlined           none              none              underline
 Ignore               term8             none

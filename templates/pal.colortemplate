@@ -103,7 +103,7 @@ StatusLineTermNC     -> StatusLineNC
   ; punctuation
   ; @punctuation.delimiter
   ; @punctuation.bracket
-  @punctuation.special -> Macro
+  @punctuation.special -> SpecialChar
 
   ; comments
   ; @comment

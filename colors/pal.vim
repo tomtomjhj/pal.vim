@@ -42,7 +42,7 @@ if has('nvim-0.8')
   hi! link @function.builtin Function
   hi! link @function.macro Macro
   hi! link @constructor Function
-  hi! link @punctuation.special Macro
+  hi! link @punctuation.special SpecialChar
   hi @markup.strong        ctermfg=NONE ctermbg=NONE cterm=bold guifg=NONE guibg=NONE gui=bold
   hi @markup.italic        ctermfg=NONE ctermbg=NONE cterm=italic guifg=NONE guibg=NONE gui=italic
   hi @markup.strikethrough ctermfg=NONE ctermbg=NONE cterm=strikethrough guifg=NONE guibg=NONE gui=strikethrough
@@ -113,6 +113,7 @@ if &background ==# 'dark'
   hi PreProc guifg=#04c5ce guibg=NONE gui=NONE cterm=NONE
   hi Type guifg=#eeeeee guibg=NONE gui=NONE cterm=NONE
   hi Special guifg=#eeeeee guibg=NONE gui=bold cterm=bold
+  hi SpecialChar guifg=#ff7d81 guibg=NONE gui=NONE cterm=NONE
   hi Delimiter guifg=#eeeeee guibg=NONE gui=NONE cterm=NONE
   hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
   hi Ignore guifg=#777777 guibg=NONE gui=NONE cterm=NONE
@@ -241,6 +242,7 @@ else
   hi PreProc guifg=#017b80 guibg=NONE gui=NONE cterm=NONE
   hi Type guifg=#121212 guibg=NONE gui=NONE cterm=NONE
   hi Special guifg=#121212 guibg=NONE gui=bold cterm=bold
+  hi SpecialChar guifg=#a52836 guibg=NONE gui=NONE cterm=NONE
   hi Delimiter guifg=#121212 guibg=NONE gui=NONE cterm=NONE
   hi Underlined guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
   hi Ignore guifg=#999999 guibg=NONE gui=NONE cterm=NONE
@@ -350,6 +352,7 @@ if s:t_Co >= 256
     hi PreProc ctermfg=6 ctermbg=NONE cterm=NONE
     hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Special ctermfg=NONE ctermbg=NONE cterm=bold
+    hi SpecialChar ctermfg=1 ctermbg=NONE cterm=NONE
     hi Delimiter ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi Ignore ctermfg=8 ctermbg=NONE cterm=NONE
@@ -452,6 +455,7 @@ if s:t_Co >= 256
     hi PreProc ctermfg=6 ctermbg=NONE cterm=NONE
     hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Special ctermfg=NONE ctermbg=NONE cterm=bold
+    hi SpecialChar ctermfg=1 ctermbg=NONE cterm=NONE
     hi Delimiter ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi Ignore ctermfg=8 ctermbg=NONE cterm=NONE
@@ -559,6 +563,7 @@ if s:t_Co >= 16
     hi PreProc ctermfg=6 ctermbg=NONE cterm=NONE
     hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Special ctermfg=NONE ctermbg=NONE cterm=bold
+    hi SpecialChar ctermfg=1 ctermbg=NONE cterm=NONE
     hi Delimiter ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi Ignore ctermfg=8 ctermbg=NONE cterm=NONE
@@ -661,6 +666,7 @@ if s:t_Co >= 16
     hi PreProc ctermfg=6 ctermbg=NONE cterm=NONE
     hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Special ctermfg=NONE ctermbg=NONE cterm=bold
+    hi SpecialChar ctermfg=1 ctermbg=NONE cterm=NONE
     hi Delimiter ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi Ignore ctermfg=8 ctermbg=NONE cterm=NONE
@@ -768,6 +774,7 @@ if s:t_Co >= 8
     hi PreProc ctermfg=6 ctermbg=NONE cterm=NONE
     hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Special ctermfg=NONE ctermbg=NONE cterm=bold
+    hi SpecialChar ctermfg=1 ctermbg=NONE cterm=NONE
     hi Delimiter ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
@@ -870,6 +877,7 @@ if s:t_Co >= 8
     hi PreProc ctermfg=6 ctermbg=NONE cterm=NONE
     hi Type ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Special ctermfg=NONE ctermbg=NONE cterm=bold
+    hi SpecialChar ctermfg=1 ctermbg=NONE cterm=NONE
     hi Delimiter ctermfg=NONE ctermbg=NONE cterm=NONE
     hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline
     hi Ignore ctermfg=NONE ctermbg=NONE cterm=NONE
